@@ -69,61 +69,22 @@
             Please select a valid state.
         </div>
     </div>
-    <div formGroupName="user">
-        <h4>Your data</h4>
-        <div class="form-group">
-            <label for="firstName">First name</label>
-            <input 
-                type="text" 
-                class="form-control" 
-                id="firstName" 
-                placeholder="Kamil"
-                formControlName="firstName"
-                [ngClass]="{'is-valid': addMovieForm.get('user.firstName').valid,
-                'is-invalid': addMovieForm.get('user.firstName').invalid}"
-                >
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-            <div class="invalid-feedback">
-                Please select a valid state.
-            </div>
+    <div class="form-group">
+        <label for="user">User</label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="user" 
+            placeholder="Kamil"
+            formControlName="user"
+            [ngClass]="{'is-valid': addMovieForm.get('user').valid,
+            'is-invalid': addMovieForm.get('user').invalid}"
+            >
+        <div class="valid-feedback">
+            Looks good!
         </div>
-        <div class="form-group">
-            <label for="lastName">Last name</label>
-            <input 
-                type="text" 
-                class="form-control" 
-                id="lastName" 
-                placeholder="Kamil"
-                formControlName="lastName"
-                [ngClass]="{'is-valid': addMovieForm.get('user.lastName').valid,
-                'is-invalid': addMovieForm.get('user.lastName').invalid}"
-                >
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-            <div class="invalid-feedback">
-                Please select a valid state.
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="email">email</label>
-            <input 
-                type="text" 
-                class="form-control" 
-                id="email" 
-                placeholder="Kamil"
-                formControlName="email"
-                [ngClass]="{'is-valid': addMovieForm.get('user.email').valid,
-                'is-invalid': addMovieForm.get('user.email').invalid}"
-                >
-            <div class="valid-feedback">
-                Looks good!
-            </div>
-            <div class="invalid-feedback">
-                Please select a valid state.
-            </div>
+        <div class="invalid-feedback">
+            Please select a valid state.
         </div>
     </div>
     <button

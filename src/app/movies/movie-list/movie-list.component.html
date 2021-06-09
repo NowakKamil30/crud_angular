@@ -14,6 +14,8 @@
           <th scope="col">Title</th>
           <th scope="col">Producer</th>
           <th scope="col">Year</th>
+          <th scope="col">User</th>
+          <th scope="col">Actions</th>
         </tr>
         </thead>
         <tbody>
@@ -22,6 +24,11 @@
           <td>{{ movie.name }}</td>
           <td>{{ movie.producer }}</td>
           <td>{{ movie.year }}</td>
+          <td>{{ movie.user }}</td>
+          <td>
+            <button
+            class="btn btn-error">delete</button>
+          </td>
         </tr>
         </tbody>
       </table>

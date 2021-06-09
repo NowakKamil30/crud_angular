@@ -30,24 +30,11 @@ export class AddMovieFormComponent implements OnInit {
         Validators.min(4),
         Validators.required
       ]),
-      user: new FormGroup({
-        firstName: new FormControl(null, [
-          Validators.min(5),
-          Validators.max(20),
-          Validators.required
-        ]),
-        lastName: new FormControl(null, [
-          Validators.min(5),
-          Validators.max(20),
-          Validators.required
-        ]),
-        email: new FormControl(null, [
-          Validators.min(5),
-          Validators.max(20),
-          Validators.email,
-          Validators.required
-        ]),
-      })
+      user: new FormControl(null, [     
+        Validators.min(3),
+        Validators.max(20),
+        Validators.required
+      ])
     });
    }
 

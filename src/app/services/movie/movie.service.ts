@@ -19,4 +19,8 @@ export class MovieService {
     return this.http
       .get<Movie[]>(`${environment.url}/movie`);
   }
+  public deleteMovie(id: number): Observable<any> {
+    return this.http
+      .delete(`${environment.url}/movie/${id}`)
+  }
 }
