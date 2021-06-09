@@ -25,4 +25,12 @@ export class MovieListComponent implements OnInit {
       });
   }
 
+  public deleteById(id: number): void {
+    this.movieService
+    .deleteMovie(id)
+      .subscribe(() => {
+        this.movies = this.movies.filter((movie: Movie) => movie.id !== id);
+      })
+  }
+
 }
