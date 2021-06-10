@@ -27,7 +27,7 @@
           <td>{{ movie.user }}</td>
           <td>
             <button
-            class="btn btn-error">delete</button>
+            class="btn btn-error" (click)="deleteById(movie.id)">delete</button>
           </td>
         </tr>
         </tbody>
