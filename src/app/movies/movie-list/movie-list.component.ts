@@ -23,6 +23,18 @@ export class MovieListComponent implements OnInit {
         this.isLoading = false;
         this.isError = true;
       });
+
+      this.movieService.subject.subscribe(() => {
+        this.movieService.getMovies()
+        .subscribe((movies: Movie[]) => {
+          this.movies = movies;
+          this.isLoading = false;
+          this.isError = false;
+        }, error => {
+          this.isLoading = false;
+          this.isError = true;
+        });
+      })
   }
 
   public deleteById(id: number): void {

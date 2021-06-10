@@ -54,6 +54,7 @@ export class AddMovieFormComponent implements OnInit {
         this.isLoading = false;
       });
     this.addMovieForm.reset();
+    this.movieService.subject.next(true);
   }
 
 }
