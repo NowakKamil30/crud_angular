@@ -25,6 +25,8 @@ export class MovieListComponent implements OnInit {
       });
 
       this.movieService.subject.subscribe(() => {
+        console.log(222);
+        
         this.movieService.getMovies()
         .subscribe((movies: Movie[]) => {
           this.movies = movies;

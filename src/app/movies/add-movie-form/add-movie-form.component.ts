@@ -53,8 +53,8 @@ export class AddMovieFormComponent implements OnInit {
         this.isError = true;
         this.isLoading = false;
       });
-    this.addMovieForm.reset();
     this.movieService.subject.next(true);
+    this.addMovieForm.reset();
   }
 
 }
